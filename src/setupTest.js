@@ -5,17 +5,17 @@ import '@testing-library/jest-dom';
 mergeSiteConfig(siteConfig);
 
 class ResizeObserver {
-	observe() {
-		// do nothing
-	}
+  observe() {
+    // do nothing
+  }
 
-	unobserve() {
-		// do nothing
-	}
+  unobserve() {
+    // do nothing
+  }
 
-	disconnect() {
-		// do nothing
-	}
+  disconnect() {
+    // do nothing
+  }
 }
 
 window.ResizeObserver = ResizeObserver;
