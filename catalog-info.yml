@@ -1,0 +1,19 @@
+# This file records information about this repo. Its use is described in OEP-55:
+# https://open-edx-proposals.readthedocs.io/en/latest/processes/oep-0055-proc-project-maintainers.html
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: 'frontend-app-aspects'
+  description: "App to display Superset dashboards in the Instructor Dash"
+  links:
+    - url: "https://github.com/openedx/frontend-app-aspects"
+      title: "Frontend app Aspects"
+      icon: "Web"
+  annotations:
+    openedx.org/arch-interest-groups: ""
+    openedx.org/release: "main"
+spec:
+  owner: group:frontend-app-aspects-maintainers
+  type: 'website'
+  lifecycle: 'production'
