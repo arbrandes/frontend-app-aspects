@@ -5,8 +5,8 @@ import { aspectsApp } from './src';
 import '@openedx/frontend-base/shell/style';
 
 const siteConfig: SiteConfig = {
-  siteId: 'template-ci',
-  siteName: 'Template CI',
+  siteId: 'aspects-ci',
+  siteName: 'Aspects CI',
   baseUrl: 'http://apps.local.openedx.io',
   lmsBaseUrl: 'http://local.openedx.io',
   loginUrl: 'http://local.openedx.io/login',
