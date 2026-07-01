@@ -32,6 +32,7 @@ const DashboardTab = ({
         supersetDomain: supersetUrl,
         mountPoint: containerRef.current,
         fetchGuestToken: () => fetchGuestToken(guestTokenUrl),
+        iframeSandboxExtras: ['allow-popups-to-escape-sandbox'],
         dashboardUiConfig: {
           hideTitle: true,
           filters: {
