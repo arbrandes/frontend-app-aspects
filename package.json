@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@edx/openedx-atlas": "^0.7.0",
-    "@superset-ui/embedded-sdk": "^0.3.0",
+    "@superset-ui/embedded-sdk": "^0.4.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
