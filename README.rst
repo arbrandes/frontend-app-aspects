@@ -193,3 +193,4 @@ Do not report security issues publicly. Email security@openedx.org instead.
 .. |codecov-badge| image:: https://codecov.io/github/openedx/frontend-app-aspects/coverage.svg?branch=main
     :target: https://codecov.io/github/openedx/frontend-app-aspects?branch=main
     :alt: Codecov
+
