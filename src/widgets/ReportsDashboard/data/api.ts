@@ -1,17 +1,17 @@
 import { getAuthenticatedHttpClient, getSiteConfig } from '@openedx/frontend-base';
 
 export interface SupersetDashboard {
-  name: string,
-  uuid: string,
-  slug: string,
-  allow_translations?: boolean,
+  name: string;
+  uuid: string;
+  slug: string;
+  allow_translations?: boolean;
 }
 
 export interface ReportsDashboardConfig {
-  superset_dashboards: SupersetDashboard[],
-  superset_url: string,
-  superset_guest_token_url: string,
-  show_dashboard_link: boolean,
+  superset_dashboards: SupersetDashboard[];
+  superset_url: string;
+  superset_guest_token_url: string;
+  show_dashboard_link: boolean;
 }
 
 export const getReportsDashboardConfig = async (courseId: string): Promise<ReportsDashboardConfig> => {

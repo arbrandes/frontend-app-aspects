@@ -13,10 +13,10 @@ import messages from './messages';
 import './style.scss';
 
 interface DashboardTabProps {
-  dashboard: SupersetDashboard,
-  supersetUrl: string,
-  guestTokenUrl: string,
-  shouldEmbed: boolean,
+  dashboard: SupersetDashboard;
+  supersetUrl: string;
+  guestTokenUrl: string;
+  shouldEmbed: boolean;
 }
 
 const DashboardTab = ({
