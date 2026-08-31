@@ -1,6 +1,7 @@
 {
   "name": "@openedx/frontend-app-aspects",
   "version": "0.0.0-dev",
+  "packageManager": "npm@11.12.1",
   "description": "Frontend-base components for the Tutor Aspects plugin",
   "repository": {
     "type": "git",
