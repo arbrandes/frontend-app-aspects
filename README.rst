@@ -94,6 +94,21 @@ When finished, unmount with:
 
     sudo umount packages/frontend-base
 
+Configuration
+*************
+
+This app is not configured by build-time environment variables.
+``getAppConfig`` resolves three sources, in order of increasing precedence:
+the app's bundled ``defaultConfig``, the site's ``commonAppConfig``, and the
+app's ``config``. The first is the app author's, at build time; the other two
+are the operator's, the second applying to every app on the site and the third
+to this app alone.
+
+This app reads none of them. It bundles no ``defaultConfig`` and exposes no
+operator-settable keys of its own. The only configuration it depends on is
+site-level: ``lmsBaseUrl``, from which the widget calls the endpoints listed
+under `Runtime/Backend Expectations`_.
+
 Developing
 **********
 
