@@ -136,6 +136,39 @@ If you are having trouble:
 
 For broader community help options, see `Getting Help`_.
 
+Branches and Releases
+*********************
+
+This app is published to NPM by ``semantic-release``, and its branches follow
+`OEP-10 ADR 0002`_:
+
+``main``
+  Unstable. Every merge publishes a prerelease on the ``alpha`` dist-tag.
+  Breaking changes land here with no DEPR process and no warning, so it is not
+  supported in production. All changes, including bug fixes, should target this
+  branch first.
+
+``stable``
+  Carries the newest stable major and owns the ``latest`` dist-tag. Changes
+  arrive here as backports from ``main``, and no breaking change lands after
+  publication.
+
+``n.x`` and ``n.m.x``
+  Maintenance branches for majors and minors that ``stable`` has moved past.
+  Each owns the dist-tag matching its own name, so consumers select a maintained
+  line by semver range, e.g. ``"1.x"``.
+
+``stable`` is cut, and ``1.0.2`` is the current stable release. Both
+``.releaserc`` and the ``Release CI`` workflow know the whole layout, including
+the maintenance branch patterns, so a new line starts publishing as soon as it
+is pushed.
+
+This repository is not branched or tagged for Open edX releases in its own
+right. It participates by published version instead, per `OEP-10 ADR 0003`_.
+
+.. _OEP-10 ADR 0002: https://docs.openedx.org/projects/openedx-proposals/en/latest/processes/oep-0010/decisions/0002-frontend-stable-branches.html
+.. _OEP-10 ADR 0003: https://docs.openedx.org/projects/openedx-proposals/en/latest/processes/oep-0010/decisions/0003-frontend-release-strategy.html
+
 License
 *******
 
@@ -151,6 +184,9 @@ Contributions are welcome. Please read `How To Contribute`_.
 
 This project accepts bug fixes, security fixes, maintenance work, and feature
 work. For larger features, open an issue first to align with maintainers.
+
+All changes, including bug fixes, should target ``main`` first; see `Branches
+and Releases`_ for how they reach ``stable`` and the maintenance lines.
 
 The Open edX Code of Conduct
 ****************************
