@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import { IntlProvider } from 'react-intl';
+import { IntlProvider } from '@openedx/frontend-base';
 import userEvent from '@testing-library/user-event';
 import ReportsDashboard from './ReportsDashboard';
 import { getReportsDashboardConfig } from './data/api';
